@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #b0219a, #6ded82); /* Blue gradient background */
+}
+
+header {
+    background: rgba(255, 255, 255, 0.2);
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for containers */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #d11625; /* Change header color to white */
+    border-bottom: 2px solid #05a713; /* Change border color to white */
+    padding-bottom: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent card background */
+    color: #333;
+    border-radius: 50%; /* Circular card shape */
+    padding: 20px; /* Added padding for better spacing */
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text alignment */
+    max-width: 180px; /* Set a max-width to limit card size */
+    height: 180px; /* Fixed height for circular shape */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 4px solid #ffffff; /* White border for the image */
+    margin-bottom: 20px; /* Spacing below the image */
+}
